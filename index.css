@@ -2,16 +2,17 @@ body {
     margin: 0;
     background-color: #232323;
     color: #DDD;
-    width: 100%;
-    overflow-x: hidden;
     font-family: "Quicksand", Courier, monospace;
+    box-sizing: border-box;
+    max-width: 100vw;
 }
 
 main {
     display: flex;
     flex-direction: column;
     height: 400vh;
-    overflow-y: visible;
+    max-width: 100vw;
+    overflow: hidden;
 }
 
 
@@ -166,9 +167,17 @@ section {
         border-bottom: thin solid white;
     }
 
+    .header {
+        height: 80vh;
+    }
+
     .header h3 {
         margin-top: 1rem;
         font-size: 1.6rem;
+    }
+
+    .products {
+        height: 200vh;
     }
 
     .title h2 {
@@ -182,7 +191,7 @@ section {
 
     .card {
         width: 100%;
-        opacity: .8;
+        opacity: .9;
     }
 
     .cards {
