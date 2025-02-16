@@ -12,7 +12,7 @@
     }
 }); */
 
-document.addEventListener("DOMContentLoaded", function () {
+/* document.addEventListener("DOMContentLoaded", function () {
     const headers = document.querySelectorAll(".titleHeader");
     let index = 0;
 
@@ -33,4 +33,4 @@ document.addEventListener("DOMContentLoaded", function () {
     // Muestra el primer título inmediatamente y luego alterna cada 3 segundos
     toggleHeaders();
     setInterval(toggleHeaders, 3000);
-});
+}); */
