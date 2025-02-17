@@ -10,7 +10,7 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    height: 400vh;
+    height: 500vh;
     max-width: 100vw;
     overflow: hidden;
 }
@@ -26,27 +26,21 @@ section {
 
 .titleHeader {
     font-size: 8rem;
+    padding-bottom: 1rem;
+    border-bottom: thin solid white;
+    margin-bottom: 2rem;
 }
 
 .titleHeader span {
     color: #05828e;
 }
 
-/* .show {
-    opacity: 1;
-    transform: scale(1);
-}
-
-.hidden {
-    opacity: 0;
-    transform: scale(0);
-} */
-
 
 .header h3 {
     padding: 0 1rem;
     font-size: 3rem;
     text-align: center;
+    margin-top: 0;
 }
 
 .title h2 {
@@ -90,9 +84,11 @@ section {
 
 .card {
     width: 0%;
-    height: 100%;
+    height: 0%;
     background-color: #232323;
     opacity: 0;
+    overflow: hidden;
+    border-radius: 50%;
 }
 
 .card-content {
@@ -155,16 +151,54 @@ section {
 .cardContainer:hover .card {
     opacity: .9;
     width: 100%;
+    height: 100%;
+    border-radius: 0;
     transition: all .4s;
 }
 
+.about {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about .title h2 {
+    font-size: 4rem;
+}
+
+.desc {
+    font-size: 2.2rem;
+    margin: auto;
+    width: 80%;
+}
+
+.blue {
+    color: #05828e;
+}
+
+.contact .title {
+    font-size: 5rem;
+    text-align: center;
+}
+
+.contact .title h2 {
+    font-size: 3.5rem;
+}
+
+.email a {
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: #DDD;
+}
 
 @media screen and (max-width: 768px) {
     .titleHeader {
         font-size: 5rem;
         margin-bottom: 0;
-        padding-bottom: 1rem;
-        border-bottom: thin solid white;
     }
 
     .header {
@@ -191,7 +225,9 @@ section {
 
     .card {
         width: 100%;
+        height: 100%;
         opacity: .9;
+        border-radius: 0;
     }
 
     .cards {
@@ -201,5 +237,21 @@ section {
     .cardContainer {
         width: 90%;
         height: 35rem;
+    }
+
+    .about .title h2 {
+        font-size: 2.2rem;
+    }
+
+    .desc {
+        font-size: 1.6rem;
+    }
+
+    .contact .title h2{
+        font-size: 3rem;
+    }
+
+    .email a {
+        font-size: 1.6rem;
     }
 }
