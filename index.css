@@ -30,6 +30,7 @@ section {
 
 .titleHeader {
     font-size: 8rem;
+    font-weight: bolder;
     padding-bottom: 1rem;
     border-bottom: thin solid white;
     margin-bottom: 2rem;
