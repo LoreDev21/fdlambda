@@ -1,3 +1,7 @@
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     background-color: #232323;
@@ -10,7 +14,7 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    height: 500vh;
+    height: 400vh;
     max-width: 100vw;
     overflow: hidden;
 }
@@ -58,17 +62,16 @@ section {
 
 .cards {
     margin-top: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
     gap: 2rem;
+    transition: all .4s ease-in-out;
 }
 
 .cardContainer {
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
-    width: 40%;
+    width: 100%;
     height: 30rem;
     background-image: url(./public/pageweb.png);
     background-size: cover;
@@ -78,8 +81,20 @@ section {
     align-items: center;
 }
 
-.cardContainer:last-child {
+.cardContainer:nth-child(2) {
+    background-image: url(./public/gta.png);
+}
+
+.cardContainer:nth-child(3) {
+    grid-column: span 2;
+    width: 50%;
+    margin: auto;
     background-image: url(./public/sakira.png);
+}
+
+.cardContainer:nth-child(3) button:hover {
+    background-color:transparent;
+    cursor: not-allowed;
 }
 
 .card {
@@ -130,7 +145,7 @@ section {
     color: #05828e;
 }
 
-.card-content button {
+.card-content button, .card-content a {
     align-self: flex-end;
     background-color: transparent;
     color: white;
@@ -142,6 +157,12 @@ section {
     font-size: 1.2rem;
     width: 100%;
     transition: all .4s;
+}
+
+.card-content a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
 }
 
 .card-content button:hover {
@@ -231,12 +252,19 @@ section {
     }
 
     .cards {
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .cardContainer {
-        width: 90%;
+        width: 90% !important;
         height: 35rem;
+    }
+
+    .about {
+        height: 200vh;
     }
 
     .about .title h2 {

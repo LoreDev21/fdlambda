@@ -16,28 +16,44 @@
 
 <body>
     <main>
-        <section class="header" data-aos="slide-down" data-aos-duration="2500" data-aos-offset="100">
-            <h1 class="titleHeader">FD<span>{</span>λ<span>}</span></h1>
+        <section class="header" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100">
+            <div class="titleHeader"><!-- FD<span>{</span>λ<span>}</span> -->
+                <img src="./public/image.png" alt="logo" width="400px">
+            </div>
             <!-- <h1 class="titleHeader titleHeaderTxt"><span>FD</span>LAMBDA</h1> -->
             <h3>Fusionamos la <span class="blue">tecnología</span> con tus ideas</h3>
         </section>
         <section class="products">
             <div class="title">
-                <h2 data-aos="fade-up">¿Necesitas una solución?</h2>
-                <p data-aos="fade-up">¡Conoce nuestro trabajo!</p>
+                <h2 data-aos="fade-up">¿Necesitas un <span class="blue">sitio web</span>?</h2>
+                <p data-aos="fade-up">¡Conoce nuestro <span class="blue">portafolio</span>!</p>
             </div>
-            <div class="cards">
+            <div class="cards" id="cards">
                 <div class="cardContainer" data-aos="fade-right" data-aos-offset="400">
                     <div class="card">
                         <div class="card-content">
-                            <h3>Sitio <span class="blue">Web</span></h3>
-                            <p>Desarrollamos sitios web a la medida de tus necesidades</p>
-                            <ul>
+                            <h3>Circulo <span class="blue">Integral</span></h3>
+                            <p>Sitio web para una firma de asesores legales</p>
+                            <!-- <ul>
                                 <li>Personalización</li>
                                 <li>Animaciones</li>
                                 <li>Disponible para dispositivos móviles</li>
-                            </ul>
-                            <button>Contáctanos</button>
+                            </ul> -->
+                            <a href="https://www.circulointegral.com.mx" target="_blank">Ir a Círculo Integral</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardContainer" data-aos="fade-right" data-aos-offset="400">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>GTA<span class="blue">sociados</span></h3>
+                            <p>Sitio web de una firma de abogados corporativista</p>
+                            <!-- <ul>
+                                <li>Personalización</li>
+                                <li>Animaciones</li>
+                                <li>Disponible para dispositivos móviles</li>
+                            </ul> -->
+                            <a href="https://gtasociados.com/" target="_blank">Ir a GTAsociados</a>
                         </div>
                     </div>
                 </div>
@@ -49,9 +65,9 @@
                             <ul>
                                 <li>Completamente offline</li>
                                 <li>Personalización según acuerdos</li>
-                                <li>Soporte técnico</li>
+                                <li>Disponible próximamente</li>
                             </ul>
-                            <button>Descarga la versión beta</button>
+                            <button disabled>Descarga la versión beta</button>
                         </div>
                     </div>
                 </div>
@@ -75,7 +91,7 @@
             <div class="title">
                 <h2 data-aos="fade-up zoom-out"><span class="blue">¡Contáctanos!</span></h2>
                 <p data-aos="fade-up">Danos tus opiniones, sugerencias o solicita una cotización</p>
-                <div class="email">
+                <div class="email" id="email">
                     <a href="mailto:lorenzccaz@gmail.com?subject=Opinión, sugerencia o cotización?&body=Hola, me gustaría saber más sobre sus servicios"
                     target="_blank">
                         lorenzccaz@gmail.com
