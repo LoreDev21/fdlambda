@@ -30,15 +30,20 @@ section {
 }
 
 .titleHeader {
-    font-size: 8rem;
+    font-size: 10rem;
     font-weight: bolder;
     padding-bottom: 1rem;
-    border-bottom: thin solid white;
     margin-bottom: 2rem;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.titleHeader span {
-    color: #05828e;
+.titleHeader img {
+    width: 40rem;
+    height: 40rem;
 }
 
 
@@ -46,7 +51,7 @@ section {
     padding: 0 1rem;
     font-size: 3rem;
     text-align: center;
-    margin-top: 0;
+    margin-top: -6rem;
 }
 
 .title h2 {
@@ -220,9 +225,9 @@ section {
 }
 
 @media screen and (max-width: 768px) {
-    .titleHeader {
-        font-size: 5rem;
-        margin-bottom: 0;
+    .titleHeader img {
+        width: 22rem;
+        height: 22rem;
     }
 
     .header {
@@ -230,9 +235,9 @@ section {
     }
 
     .header h3 {
-        margin-top: 1rem;
+        margin-top: -3rem;
         font-size: 1.6rem;
-        margin-bottom: 20rem;
+        margin-bottom: 20rem;   
     }
 
     .products {
